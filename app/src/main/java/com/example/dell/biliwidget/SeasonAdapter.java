@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.szysky.customize.siv.SImageView;
+
 import java.util.List;
 
 /**
@@ -22,13 +24,13 @@ public class SeasonAdapter extends RecyclerView.Adapter<SeasonAdapter.ViewHolder
         TextView title;
         TextView time;
         TextView index;
-        ImageView cover;
+        SImageView cover;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             title=(TextView)itemView.findViewById(R.id.title);
             time=(TextView)itemView.findViewById(R.id.time);
             index=(TextView)itemView.findViewById(R.id.index);
-            cover=(ImageView)itemView.findViewById(R.id.cover);
+            cover=(SImageView) itemView.findViewById(R.id.cover);
 
         }
     }
@@ -49,6 +51,7 @@ public class SeasonAdapter extends RecyclerView.Adapter<SeasonAdapter.ViewHolder
         holder.title.setText(seasons.getTitle());
         holder.time.setText(seasons.getPub_time());
         holder.index.setText(seasons.getPub_index());
+        holder.cover.setImageUrls(seasons.getCover());
     }
 
 

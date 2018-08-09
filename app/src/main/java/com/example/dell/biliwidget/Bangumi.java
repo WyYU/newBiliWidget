@@ -216,10 +216,11 @@ public  class Bangumi {
             //测试爬取结果
 
 
-            public Seasons(String title,String pub_index, String pub_time) {
+            public Seasons(String title,String pub_index, String pub_time,String url) {
                 this.pub_index = pub_index;
                 this.pub_time = pub_time;
                 this.title = title;
+                this.cover=url;
             }
 
 
