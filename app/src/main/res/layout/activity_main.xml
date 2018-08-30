@@ -5,24 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.dell.biliwidget.MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include
-            layout="@layout/toolsbar"
-             />
+        <include layout="@layout/toolsbar" />
+
         <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/recyclerView">
+            android:layout_height="wrap_content">
 
         </android.support.v7.widget.RecyclerView>
 
     </LinearLayout>
-
-
 
 
 </android.support.constraint.ConstraintLayout>
