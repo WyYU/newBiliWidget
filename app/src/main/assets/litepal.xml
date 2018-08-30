@@ -1,0 +1,9 @@
+<?xml version="2.0" encoding="UTF-8" ?>
+<litepal>
+    <dbname value="DB"></dbname>
+
+    <version value="20"></version>
+    <list>
+
+    </list>
+</litepal>
