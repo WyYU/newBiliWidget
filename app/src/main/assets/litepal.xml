@@ -5,8 +5,5 @@
     <version value="20"></version>
     <list>
 
-
-        <mapping class="com.example.dell.biliwidget.Bangumi"></mapping>
-        <mapping class="com.example.dell.biliwidget.DbResult"></mapping>
     </list>
 </litepal>
